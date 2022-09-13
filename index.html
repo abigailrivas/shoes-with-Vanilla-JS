@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Nike</title>
+        <link rel="icon" href="/assets/images/favicon.png" type="image/png">
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="loader"></div>
+        </div>
+        <header>
+            <a href="#">
+                <img class="logo" src="/assets/images/Logo_NIKE.svg.png" alt="Logo Nike">
+            </a>
+            <h2 class="title">Más vendidos</h2>
+        </header>
+        <div class= "container">
+            <div class= "box">
+                <h2 class="name">Air Force 1 Shadow</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle"></div>
+                <image src="/assets/images/zapa_1.png" class="product">
+            </div>
+            <div class= "box">
+                <h2 class="name">Pegasus Trail 3</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle">
+                    <image src="/assets/images/zapa_2.png" class="product">
+                </div>
+            </div>
+            <div class="box">
+                <h2 class="name">Waffle One</h2>
+                <a href="#" class="buy">Buy Now</a>
+                <div class="circle">
+                    <image src="/assets/images/zapa_3.png" class="product">
+                </div>
+            </div>
+        </div>
+        <script src="/assets/js/vanilla-tilt.min.js"></script>
+        <script>
+            VanillaTilt.init(document.querySelectorAll(".box"), {
+                max: 25,
+                speed: 400,
+            });
+        </script>
+    </body>
+</html>
